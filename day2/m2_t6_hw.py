@@ -21,9 +21,9 @@ if int(box_quantity) not in range(0, 2001):
     print("Вы ввели некоректное значение")
     exit()
 
-if int(box_quantity[-1]) == 1:
+if int(box_quantity[-1]) == 1 and int(box_quantity[-2:]) != 11:
     ending = 'ка'
-elif int(box_quantity[-1]) in range(2, 5):
+elif int(box_quantity[-1]) in range(2, 5) and int(box_quantity[-2:]) not in range(12, 20):
     ending = 'ки'
 
 print(f'У вас {box_quantity} короб{ending}!')
