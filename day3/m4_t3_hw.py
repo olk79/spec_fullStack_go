@@ -20,9 +20,11 @@ n: 1
 """
 
 in_str = input('Введите строку: ')
-
+unique = []
 for el in in_str:
-    print(f'{el}: {in_str.count(el)}')
+    if el not in unique:
+        unique.append(el)
+        print(f'{unique[unique.index(el)]}: {in_str.count(el)}')
 
 
 
