@@ -83,7 +83,7 @@ def login_check(psw: str) -> tuple:
     if len(descr) == 0:
         descr.append(dsc[0])
 
-    return status, *descr
+    return status, descr
 
 
 if __name__ == "__main__":
